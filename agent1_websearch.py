@@ -804,7 +804,7 @@ async def main():
     """Example usage of Agent 1 with web content extraction"""
     
     # Initialize Agent 1
-    gemini_api_key = "AIzaSyCEd6f7y1XTUG4P42tEwSdT1_Nf-h76sRs"  # Replace with your actual API key
+    gemini_api_key = "Gemini_API_KEY"  # Replace with your actual API key
     agent1 = Agent1WebContentSearcher(gemini_api_key)
     
     # Test 
