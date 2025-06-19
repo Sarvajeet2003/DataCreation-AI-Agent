@@ -31,7 +31,7 @@ except ImportError as e:
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Dataset Pipeline",
+    page_title="AI Testset Pipeline",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -561,8 +561,8 @@ def main():
     # Header
     st.markdown("""
     <div class="main-header">
-        <h1>🤖 AI Dataset Pipeline</h1>
-        <p>Intelligent 4-Agent System for Dataset Generation, Analysis & Enhancement</p>
+        <h1>🤖 AI Testset Pipeline</h1>
+        <p>Intelligent 4-Agent System for Testset Generation, Analysis & Enhancement</p>
     </div>
     """, unsafe_allow_html=True)
     
@@ -601,12 +601,12 @@ def main():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.header("🎯 Dataset Requirements")
+        st.header("🎯 Testset Requirements")
         
         # User input
         query = st.text_area(
-            "Enter your dataset requirements:",
-            placeholder="I want dataset on effect of gallbladder stones on human body",
+            "Enter your Test requirements:",
+            placeholder="I want Testset on effect of gallbladder stones on human body",
             height=100,
             disabled=st.session_state.pipeline_running
         )
